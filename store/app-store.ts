@@ -57,11 +57,6 @@ export const appStore = create<AppState>()(
         [targetKey]: [...targetData, ...selectedItems],
       });
 
-      if (timeouts.has(name)) {
-        clearTimeout(timeouts.get(name)!);
-        timeouts.delete(name);
-      }
-
       const timeout = setTimeout(() => {
         moveBackNow(type, name);
         timeouts.delete(name);

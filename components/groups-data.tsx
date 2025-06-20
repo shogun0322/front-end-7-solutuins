@@ -14,7 +14,7 @@ export const RenderGroupData: React.FC<RenderGroupDataProps> = ({
 }) => {
   return (
     <div className="flex flex-col flex-1 gap-2 border">
-      <div className="flex items-center justify-center h-[40px] border">
+      <div className="flex items-center justify-center h-10 border-b">
         {title}
       </div>
       <div className="flex flex-col flex-1 gap-2 p-3">
